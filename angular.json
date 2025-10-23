@@ -132,6 +132,11 @@
           "options": {
             "tsConfig": "projects/ngx-drupal8-rest/tsconfig.lib.json",
             "project": "projects/ngx-drupal8-rest/ng-package.json"
+          },
+          "configurations": {
+            "watch": {
+              "watch": true
+            }
           }
         },
         "test": {

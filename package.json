@@ -9,6 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build_lib": "ng build ngx-drupal8-rest",
+    "build_lib:watch": "ng build ngx-drupal8-rest --watch",
+    "build_lib:watch-config": "ng build ngx-drupal8-rest --configuration=watch",
     "npm_pack": "cd dist/ngx-drupal8-rest && npm pack",
     "npm_publish": "cd dist/ngx-drupal8-rest && npm publish",
     "copy-license": "cp ./LICENSE ./dist/ngx-drupal8-rest",
