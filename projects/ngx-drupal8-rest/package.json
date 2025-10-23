@@ -1,15 +1,15 @@
 {
-  "name": "ngx-drupal8-rest",
-  "version": "1.19.4",
+  "name": "@makiwin/ngx-drupal8-rest",
+  "version": "1.19.5",
   "scripts": {
-    "watch:dev": "ng build --watch "
+    "watch:dev": "ng build ngx-drupal8-rest --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wnabil/ngx-drupal8-rest.git"
+    "url": "https://github.com/Makiwin/ngx-drupal8-rest.git"
   },
   "author": "Wassem Keddah",
-  "homepage": "https://github.com/wnabil/ngx-drupal8-rest/",
+  "homepage": "https://github.com/Makiwin/ngx-drupal8-rest/",
   "license": "MIT",
   "keywords": [
     "angular",
