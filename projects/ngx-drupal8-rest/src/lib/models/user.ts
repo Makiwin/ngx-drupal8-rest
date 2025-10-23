@@ -5,7 +5,7 @@ import {
   FieldEntityReference,
   FieldNumber,
   FieldEntityReferenceFile,
-} from "./field";
+} from './field';
 
 export interface LoginCredentials {
   name: string;
@@ -40,5 +40,5 @@ export interface UserEntity {
   uid?: FieldNumber[];
   user_picture?: FieldEntityReferenceFile[];
   uuid?: FieldText[];
-  [key: string]: any[];
+  [key: string]: any[] | undefined;
 }

@@ -25,10 +25,11 @@ export class WebformService extends BaseService {
       method: 'get',
       frags: [machineName],
     };
-    if (langCode) {
-      httpOptions.params = { langcode: langCode };
+    let url = '/webform/{webform}';
+    if (langCode && langCode !== 'en') {
+      url = `/${langCode}/${url}`;
     }
-    return this.request(httpOptions, '/webform/{webform}');
+    return this.request(httpOptions, url);
   }
 
   /**
@@ -41,10 +42,11 @@ export class WebformService extends BaseService {
       method: 'get',
       frags: [machineName],
     };
-    if (langCode) {
-      httpOptions.params = { langcode: langCode };
+    let url = '/webform_rest/{webform_id}/fields';
+    if (langCode && langCode !== 'en') {
+      url = `/${langCode}/${url}`;
     }
-    return this.request(httpOptions, '/webform_rest/{webform_id}/fields');
+    return this.request(httpOptions, url);
   }
 
   /**
@@ -61,13 +63,12 @@ export class WebformService extends BaseService {
       method: 'get',
       frags: [machineName, sid.toString()],
     };
-    if (langCode) {
-      httpOptions.params = { langcode: langCode };
+
+    let url = '/webform_rest/{webform_id}/submission/{sid}';
+    if (langCode && langCode !== 'en') {
+      url = `/${langCode}/${url}`;
     }
-    return this.request(
-      httpOptions,
-      '/webform_rest/{webform_id}/submission/{sid}'
-    );
+    return this.request(httpOptions, url);
   }
 
   /**
