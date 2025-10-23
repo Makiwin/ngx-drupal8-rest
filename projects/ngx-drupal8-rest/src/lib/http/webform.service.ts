@@ -27,7 +27,7 @@ export class WebformService extends BaseService {
     };
     let url = '/webform/{webform}';
     if (langCode && langCode !== 'en') {
-      url = `/${langCode}/${url}`;
+      url = `/${langCode}${url}`;
     }
     return this.request(httpOptions, url);
   }
@@ -44,7 +44,7 @@ export class WebformService extends BaseService {
     };
     let url = '/webform_rest/{webform_id}/fields';
     if (langCode && langCode !== 'en') {
-      url = `/${langCode}/${url}`;
+      url = `/${langCode}${url}`;
     }
     return this.request(httpOptions, url);
   }
@@ -66,7 +66,7 @@ export class WebformService extends BaseService {
 
     let url = '/webform_rest/{webform_id}/submission/{sid}';
     if (langCode && langCode !== 'en') {
-      url = `/${langCode}/${url}`;
+      url = `/${langCode}${url}`;
     }
     return this.request(httpOptions, url);
   }
